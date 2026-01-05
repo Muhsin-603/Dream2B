@@ -2,13 +2,12 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "type": "cppbuild",
             "label": "Build Dream2B",
-            "command": "g++.exe",
+            "type": "shell", 
+            "command": "C:\\mingw64\\bin\\g++.exe",
             "args": [
-                "-fdiagnostics-color=always",
                 "-g",
-                "${workspaceFolder}/src/*.cpp",
+                "${workspaceFolder}/src/main.cpp",
                 "-o",
                 "${workspaceFolder}/Dream2B.exe",
                 "-I${workspaceFolder}/external/raylib/include",
@@ -20,14 +19,12 @@
             "options": {
                 "cwd": "${workspaceFolder}"
             },
-            "problemMatcher": [
-                "$gcc"
-            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "Manual Build by Drac"
+            "problemMatcher": ["$gcc"],
+            "detail": "The correct build task for Drac."
         }
     ]
 }
