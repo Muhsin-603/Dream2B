@@ -4,7 +4,7 @@
         {
             "type": "cppbuild",
             "label": "Build Dream2B",
-            "command": "C:\\mingw64\\bin\\g++.exe",
+            "command": "g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -27,7 +27,6 @@
                 "kind": "build",
                 "isDefault": true
             },
-            
             "detail": "Manual Build by Drac"
         }
     ]
